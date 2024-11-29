@@ -1,0 +1,14 @@
+{
+    "name": "book-management-app",
+    "private": true,
+    "scripts": {
+        "frontend:dev": "npm --prefix frontend run start",
+        "backend:dev": "npm --prefix backend run start",
+        "frontend:build": "npm --prefix frontend run build",
+        "backend:cls": "npm --prefix frontend run build",
+        "dev": "concurrently \"npm run frontend:dev\" \"npm run backend:dev\""        
+    },
+    "devDependencies": {
+        "concurrently": "^9.0.1"
+    }
+}
